@@ -14,6 +14,17 @@
         <servlet-class>test.UserServlet</servlet-class>
     </servlet>
 
+    <servlet>
+        <servlet-name>test.UserActionServlet</servlet-name>
+        <servlet-class>test.UserActionServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>forms.UserFormsServlet</servlet-name>
+        <servlet-class>forms.UserFormsServlet</servlet-class>
+    </servlet>
+
+
     <servlet-mapping>
         <servlet-name>test.TestServlet</servlet-name>
         <url-pattern>/s/*</url-pattern>
@@ -21,5 +32,15 @@
     <servlet-mapping>
         <servlet-name>test.UserServlet</servlet-name>
         <url-pattern>/u/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>test.UserActionServlet</servlet-name>
+        <url-pattern>/ua/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>forms.UserFormsServlet</servlet-name>
+        <url-pattern>/f/*</url-pattern>
     </servlet-mapping>
 </web-app>
